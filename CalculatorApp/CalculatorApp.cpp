@@ -15,7 +15,7 @@ int main()
 
 
 	cout << "Calculator Console Application\n\n";
-	cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b | a^b\n";
+	cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b | a^b | a%b\n";
 
 	CalculatorBrain c;
 	while (true)
