@@ -21,6 +21,18 @@ int main()
 	while (true)
 	{
 		cin >> x >> oper >> y;
+
+		while (1) {
+			if (cin.fail()) {
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				cout << "You have entered the wrong input\n";
+				cin >> x >> oper >> y;
+			}
+			if (!cin.fail())
+				break;
+		}
+
 		result = c.Calculate(x, oper, y);
 		cout << "Result is: " << result << "\n";
 	}
